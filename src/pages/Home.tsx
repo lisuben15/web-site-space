@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Home = () => {
   return (
     <div
@@ -24,10 +26,12 @@ export const Home = () => {
             world experience!
           </p>
         </div>
-        <div className="flex-1 flex justify-end">
-          <a href="/destination" className= "planet-container  w-[144px] h-[144px] md:w-[272px] md:h-[272px] text-[18px] md:text-[32px] rounded-full  bg-black transition-all duration-200 ease-in-out z-9 overflow-hidden ">
-              <span className="flex justify-center items-center w-full" >EXPLORE</span>
-          </a>
+        <div className="flex-1 flex justify-end">                
+          <Link
+              to={"/destination"}
+              className= "planet-container  w-[144px] h-[144px] md:w-[272px] md:h-[272px] text-[18px] md:text-[32px] rounded-full  bg-black transition-all duration-200 ease-in-out z-9 overflow-hidden ">
+              <span className="flex justify-center items-center w-full" >EXPLORE</span>             
+            </Link>    
         </div>
       </div>
     </div>
